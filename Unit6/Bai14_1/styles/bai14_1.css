@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.list{
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+ul {
+    list-style: none;
+    padding: 0;
+    background-color: white;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color:  rgba(0, 0, 0, 0.2);
+}
+li :hover{
+   background-color: #888;
+   color:  black;
+}
+/* Áp dụng màu nền xen kẽ cho các công việc */
+li:nth-child(even) {
+    background-color: #f7f7f7; /* Màu nền cho các công việc chẵn */
+}
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color:  rgb(178, 178, 24);
+}
+
+.delete {
+    color: #f00;
+    cursor: pointer;
+}
